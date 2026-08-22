@@ -104,7 +104,7 @@ Access current web search, URL content extraction, and AI research through You.c
   "mcpServers": {
     "you-com": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://api.you.com/mcp"],
+      "args": ["-y", "mcp-remote", "https://api.you.com/mcp", "--header", "Authorization: Bearer $YDC_API_KEY"],
       "env": {
         "YDC_API_KEY": "your_api_key_here"
       }
@@ -121,11 +121,9 @@ Access current web search, URL content extraction, and AI research through You.c
 }
 ```
 
-- **you-com**: Full authenticated access (requires [You.com API key](https://you.com/platform/api-keys?utm_source=5ire&utm_medium=mcp-integration&utm_campaign=2026-08-oss-integrations))
-- **you-com-free**: Keyless web search (100 searches/day)
-- **you-docs**: You.com documentation search
-
-Available tools: `you-search` (web search), `you-contents` (URL extraction), `you-research` (cited synthesis)
+- **you-com**: Full authenticated access with tools: `you-search`, `you-contents`, `you-research`, `you-discover`, `you-balance`, and optional `you-finance` (requires [You.com API key](https://you.com/platform/api-keys?utm_source=5ire&utm_medium=mcp-integration&utm_campaign=2026-08-oss-integrations))
+- **you-com-free**: Keyless web search with tools: `you-search` (100 searches/day)
+- **you-docs**: You.com documentation search with tools: `searchDocs`
 
 ## 💡 Local Knowledge Base
 

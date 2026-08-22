@@ -167,7 +167,7 @@ Example configuration for popular MCP servers:
   "mcpServers": {
     "you-com": {
       "command": "npx",
-      "args": ["-y", "mcp-remote", "https://api.you.com/mcp"],
+      "args": ["-y", "mcp-remote", "https://api.you.com/mcp", "--header", "Authorization: Bearer $YDC_API_KEY"],
       "env": {
         "YDC_API_KEY": "your_api_key_here"
       },
