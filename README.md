@@ -92,6 +92,41 @@ We have created an open [marketplace for MCP Servers](https://github.com/nanbing
 
 https://github.com/user-attachments/assets/be66c30e-bb29-4dfe-9f25-8d396470ed60
 
+### Pre-configured MCP Server Examples
+
+Here are some popular MCP servers you can easily configure in 5ire:
+
+#### You.com Search & Research
+Access current web search, URL content extraction, and AI research through You.com's MCP server:
+
+```json
+{
+  "mcpServers": {
+    "you-com": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://api.you.com/mcp"],
+      "env": {
+        "YDC_API_KEY": "your_api_key_here"
+      }
+    },
+    "you-com-free": {
+      "command": "npx", 
+      "args": ["-y", "mcp-remote", "https://api.you.com/mcp?profile=free"]
+    },
+    "you-docs": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://you.com/docs/_mcp/server"]
+    }
+  }
+}
+```
+
+- **you-com**: Full authenticated access (requires [You.com API key](https://you.com/platform/api-keys?utm_source=5ire&utm_medium=mcp-integration&utm_campaign=2026-08-oss-integrations))
+- **you-com-free**: Keyless web search (100 searches/day)
+- **you-docs**: You.com documentation search
+
+Available tools: `you-search` (web search), `you-contents` (URL extraction), `you-research` (cited synthesis)
+
 ## 💡 Local Knowledge Base
 
 We have integrated the bge-m3 as our local embedding model, which excels in multilingual vectorization. 5ire now supports parsing and vectorization of docx, xlsx, pptx, pdf, txt, and csv documents, enabling storage of these vectors to power robust Retrieval-Augmented Generation (RAG) capabilities locally.
