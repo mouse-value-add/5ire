@@ -45,7 +45,7 @@
 </div>
 <br />
 
-### Before to activating tools feature, ensure the following components are installed:
+### Before activating tools feature, ensure the following components are installed:
 
 - Python
 - Node.js
@@ -164,7 +164,7 @@ You can perform keyword searches across all conversations, quickly pinpointing t
 ![Search Screenshot](https://5ire.app/search.png)
 
 > [!TIP]
-> Since 5ire uses native dependencies, it needs to be packaged on the corresponding platform. If it is on Mac OS, you may also need to configure APPLE_TEAM_ID, APPLE_ID, and APPLE_ID_PASS for notarization to avoid security alerts.
+> Since 5ire uses native dependencies, it needs to be packaged on the corresponding platform. If it is on macOS, you may also need to configure APPLE_TEAM_ID, APPLE_ID, and APPLE_ID_PASS for notarization to avoid security alerts.
 
 <hr/>
 
